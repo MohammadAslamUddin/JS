@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th JavaScript</title>
+</head>
+<body>
+    <script>
+        //Stand in line
+        // Adding element in an array using push function
+        //Deleting the very first element of the array using shift function
+
+    /*
+        function nextInLine(arr, item) {
+            
+            arr.push(item);
+
+            return arr.shift();;
+        }
+
+        var testarr = [1, 2, 3, 4, 5];
+
+        console.log("Before: " + JSON.stringify(testarr));
+        console.log(nextInLine(testarr, 6));
+        console.log("After: " + JSON.stringify(testarr));
+    */
+
+        //Boolean Values
+        
+    /*
+        function welcomeToBooleans() {
+            return true;
+            return false;
+        }
+    */
+
+        //Use Conditional Logic With if Statement
+
+    /*
+        function ourTrueOrFalse(isItTrue) {
+            if(isItTrue){
+                return "Yes, it's true";
+            }
+            return "No, it's false";
+        }
+        function trueOrFalse(wasItTrue) {
+            if(wasItTrue){
+                return "Yes, it was";
+            }
+            return "No, it wasn't";
+        }
+        console.log(trueOrFalse(false));
+    */
+
+        //Comparison With Equality Operator
+
+    /*
+        function testEqual(val) {
+            if (val == 12) {
+                return "Equal";
+            }
+            return "Not Equal";
+        }
+        console.log(testEqual(12));
+    */
+
+        //Comparison with strict Equality Operator
+
+    /* 
+        function testStrict(val) {
+            if (val === 7) {
+                return "Equal";
+            }
+        return "Not Equal";
+        }
+
+        console.log(testStrict(10));
+    
+    */
+
+        //Switch Statement
+    
+    /* 
+        function switchOfStuff(val) {
+            var answer = "";
+            switch (val) {
+                case "a":
+                    answer = "apple";
+                    break;
+                case "b":
+                    answer = "bal";
+                    break;
+                case "c":
+                    answer = "cat";
+                    break;
+                
+                default:
+                    answer = "stuff";
+                    break;
+            }
+            return answer;
+        }
+        console.log(switchOfStuff("x"));
+    */
+
+        //Switch
+        var count = 0;
+        function cc(card) {
+            switch (card) {
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                    count++;
+                    break;
+                case 10:
+                case 'A':
+                case 'Q':
+                case 'K':
+                case 'J':
+                    count--;
+            }
+            return count;
+        }
+
+        cc(2);
+        cc('A');
+        cc('J');
+        cc(5);
+        cc(10);
+        console.log(cc(4));
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
